@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "554032511409",
+    "project_id": "the-second-attempt",
+    "storage_bucket": "the-second-attempt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:554032511409:android:ff81b05915d4ec1afae590",
+        "android_client_info": {
+          "package_name": "com.example.gtk_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "554032511409-infno4oi3jmja0cltihtivbd3hue0s8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDD1ssfqS-U2StQ3XQE_0-YoQNxZtp9q8A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "554032511409-infno4oi3jmja0cltihtivbd3hue0s8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
