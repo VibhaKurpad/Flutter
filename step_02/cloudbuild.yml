@@ -12,7 +12,6 @@ steps:
   entrypoint: '/bin/bash'
   args: ['build.sh', 'Flutter']
 
-# upload apk to google play store with Fastlane
-- name: 'gcr.io/$PROJECT_ID/fastlane'
-  args: ['supply', '--package_name','${_ANDROID_PACKAGE_NAME}', '--track', '${_ANDROID_RELEASE_CHANNEL}', '--json_key_data', '${_GOOGLE_PLAY_UPLOAD_KEY_JSON}', '--apk', '/workspace/${_REPO_NAME}/build/app/outputs/apk/release/app-release.apk']
-timeout: 1200s
+# upload apk to Google Cloud Storage bucket
+- name: 'gcr.io/cloud-builders/gsutil'
+  args: ['cp','/workspace/Flutter/build/app/outputs/apk/release/app-release.apk', 'gs://vibha-flutterapp/app-debug-$SHORT_SHA.apk']
